@@ -8,13 +8,13 @@ class HomeBody extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    double bodyWidth = getBodyWidth(context);
     return Container(
-      color: Colors.red,
       child: Align(
         // 나중에 Align 없애보기
         alignment: Alignment.center,
         child: SizedBox(
-          width: getBodyWidth(context),
+          width: bodyWidth,
           child: Column(
             children: [
               HomeBodyBanner(),

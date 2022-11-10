@@ -13,6 +13,6 @@ const double header_height = 620;
 // BuildContext는 해당 class에 대한 모든 구조를 알고 있다. - 트리형태
 // BuildContext를 사용하여 해당 context의 모든 정보를 알 수 있다.
 double getBodyWidth(BuildContext context) {
-  return MediaQuery.of(context).size.width * 07;
+  return MediaQuery.of(context).size.width * 0.7;
   //MediaQuery는 해당 화면의 사이즈를 알 수 있는 클래스 이다.
 }
