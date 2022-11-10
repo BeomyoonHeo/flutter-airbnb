@@ -8,13 +8,14 @@ class HomeBody extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    double bodyWidth = getBodyWidth(context);
+    double bodyWidth = MediaQuery.of(context).size.width;
+
     return Container(
       child: Align(
         // 나중에 Align 없애보기
         alignment: Alignment.center,
         child: SizedBox(
-          width: bodyWidth,
+          width: bodyWidth < 350 ? getBodyWidth(context) : bodyWidth,
           child: Column(
             children: [
               HomeBodyBanner(),
